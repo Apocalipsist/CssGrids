@@ -1,0 +1,86 @@
+/* body{
+    background-color: black;
+    color: white;
+} */
+
+.container {
+  min-height: 75vh;
+  background-color: wheat;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 10vh 2fr 3fr;
+  grid-template-areas:
+    "navbar navbar navbar navbar navbar navbar"
+    ". prof-pic prof-info prof-info prof-info ."
+    ". posts posts posts posts .";
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.prof-pic {
+  grid-area: prof-pic;
+  display: flex;
+  align-items: center;
+}
+
+#prof-pic {
+  width: 100%;
+  height: auto;
+}
+
+.prof-info {
+  grid-area: prof-info;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 0 5vw;
+}
+
+.prof-info > h1 {
+  align-self: center;
+}
+
+.posts {
+  grid-area: posts;
+}
+
+.post-card{
+    border: 1px solid black;
+    
+    padding: 1vh;
+}
+
+.card-links{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-links > a{
+    text-decoration: none;
+    color: black;
+}
+
+.card-links > a:hover{
+    text-decoration: underline;
+    color: black;
+    background-color: aqua;
+}
+
+/* Combinator Selector - direct descendent */
+/* .container > div{
+    border: 2px solid black;
+} */
