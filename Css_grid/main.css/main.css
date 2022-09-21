@@ -60,8 +60,9 @@
 
 .post-card{
     border: 1px solid black;
-    
     padding: 1vh;
+    margin: .8vh 0;
+
 }
 
 .card-links{
@@ -79,6 +80,8 @@
     color: black;
     background-color: aqua;
 }
+
+
 
 /* Combinator Selector - direct descendent */
 /* .container > div{
